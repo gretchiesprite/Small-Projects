@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Datepicker</title>
+    
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+    
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!--TimePicker-->
+    <link rel="stylesheet" type="text/css" href="TimePicki-master/css/timepicki.css"/>
+    
+    <script type="text/javascript" src="TimePicki-master/js/timepicki.js"></script>
+
+
+    <script type="text/javascript">
+
+      $(function() {
+        $( "#datepicker" ).datepicker({
+          changeMonth: true,
+          changeYear: true
+        });
+      });
+
+      $( function() {
+        $('#timepicker').timepicki();
+      });
+    </script>
+  </head>
+    
+  <body>
+
+    <p>Start Date: <input type="text" id="datepicker"></p> 
+    
+    <p>Time: <input type="text" id="timepicker"></p>
+    
+    <p>Duration: <input type="text" id="duration"></p>
+
+  </body>
+</html>
